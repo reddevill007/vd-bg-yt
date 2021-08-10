@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 90vh;
+    width: 100px;
+    position: fixed;
+    background-color: rgba(265, 265, 265, 0.6);
+    backdrop-filter: blur(2px);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    flex-direction: column;
+    z-index: 100;
+}
+
+header .logo img{
+    width: 50px;
+}
+
+header .company-name{
+    transform: rotate(90deg);
+}
+
+header .company-name h1{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #686868;
+    text-transform: uppercase;
+}
+
+header .toggle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #686868;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .toggle div{
+    height: 3px;
+    width: 30px;
+    background: #686868;
+}
+
+header .toggle div::after{
+    content: '';
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    height: 3px;
+    width: 30px;
+    background-color: #686868;
+    transform: rotate(90deg);
+}
+
+#vid{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: fit-content;
+    padding: 10px 0;
+    background-color: rgba(265, 265, 265, 0.6);
+    backdrop-filter: blur(2px);
+    color: #686868;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.btn img{
+    width: 30px;
+    margin-right: 15px;
+}
+
+.sound{
+    background-color: rgba(265, 265, 265, 0.6);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    color: #686868;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound #icon2 i{
+    font-size: 30px;
+    color: #0ddffe;
+}

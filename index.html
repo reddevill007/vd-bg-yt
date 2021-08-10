@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+
+    <!------- CSS Linkage --------->
+    <link rel="stylesheet" href="style.css">
+
+    <!---- Font Awesome Cdn Linkage ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!------- Favicon Linkage --------->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+
+        <div class="company-name">
+            <h1>Company</h1>
+        </div>
+
+        <div class="toggle">
+            <div></div>
+        </div>
+    </header>
+
+    <video loop muted plays-inline id="vid">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Controls -->
+    <div class="btn" id="playbtn">
+        <img src="play.png" alt="icon" id="icon"> Watch Video
+    </div>
+
+    <div class="sound" id="sound">
+        <div id="icon2">
+            <i class="fas fa-volume-mute"></i>
+        </div>
+    </div>
+    
+    
+    <!------- Javascript Linkage --------->
+    <script src="app.js"></script>
+</body>
+
+</html>
